@@ -113,10 +113,11 @@ java -jar agent.jar -url http://<master-ip>:8080/ -secret <SECRET_KEY> -name "wi
 1. Go to Jenkins → `New Item` → Enter job name → Select **Pipeline** → Save.
 2. In **Pipeline Script** section, use one of the examples below.
 
-## Note :
+# Note :
 # Create the two separate jobs with pipelines for two slaves(Ex: ubuntu-slave-job & centos-slave-job)
 
-#### Example 1: Run on Ubuntu Slave
+
+#### Example 1: Run on Ubuntu Slave ( use this pipeline script for ubuntu-slave )
 
 ```groovy
 pipeline {
@@ -133,7 +134,7 @@ pipeline {
 }
 ```
 
-#### Example 2: Run on CentOS Slave
+#### Example 2: Run on CentOS Slave( use this pipeline script for centos-Slave )
 
 ```groovy
 pipeline {
